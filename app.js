@@ -33,7 +33,7 @@ function exibirTextoNaTela(tag, texto){
 }
 
 function exibirMnesagemInicial() {
-    exibirTextoNaTela('h1','Jogo do Número Secreto');
+    exibirTextoNaTela('h1','Descubra o número secreto');
     exibirTextoNaTela('p','Escolha um número entre 1 e 50');
 }
 
