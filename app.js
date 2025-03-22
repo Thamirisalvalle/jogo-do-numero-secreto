@@ -2,7 +2,7 @@
 let listaDeNumerosSorteados = [];
 
 // Criando dinamismo na quantidade de numeros sorteados
-let numeroLimite = 10;
+let numeroLimite = 100;
 
 // Declarando a variavel que irá gerar e armazenar um número aleatório, e irá contabilizar as tentativas de acertos
 let numeroSecreto = gerarNumeroAleatorio ();
@@ -12,13 +12,13 @@ let titulo = document.querySelector('h1');
 titulo.innerHTML = 'Jogo do Número Secreto';
 
 let paragrafo = document.querySelector('p');
-paragrafo.innerHTML = 'Escolha um número entre 1 e 10';
+paragrafo.innerHTML = 'Escolha um número entre 1 e 100';
 
 function exibirTextoNaTela(tag, texto){
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
     // Voz que vai narrar o jogo
-    // responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
     
     //outra API de voz para narrar
     // if ('speechSynthesis' in window) {
@@ -34,7 +34,7 @@ function exibirTextoNaTela(tag, texto){
 
 function exibirMnesagemInicial() {
     exibirTextoNaTela('h1','Jogo do Número Secreto');
-    exibirTextoNaTela('p','Escolha um número entre 1 e 10');
+    exibirTextoNaTela('p','Escolha um número entre 1 e 100');
 }
 
 exibirMnesagemInicial();
